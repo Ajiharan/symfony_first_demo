@@ -7,7 +7,12 @@ kernel:
     type: annotation
 
 
-main:
-    path: /main
+welcome:
+    path: /welcome
     # the controller value has the format 'controller_class::method_name'
     controller: App\Controller\MainController::index
+
+custom:
+    path: /custom
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\MainController::show
