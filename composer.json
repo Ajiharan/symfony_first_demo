@@ -4,9 +4,10 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.0.2",
+        "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/annotations": "^1.13",
         "symfony/console": "6.0.*",
         "symfony/dotenv": "6.0.*",
         "symfony/flex": "^2",
@@ -15,6 +16,7 @@
         "symfony/yaml": "6.0.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.36"
     },
     "config": {
         "allow-plugins": {
