@@ -16,3 +16,8 @@ custom:
     path: /custom
     # the controller value has the format 'controller_class::method_name'
     controller: App\Controller\MainController::show
+
+user:
+    path: /user/{name?}
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\MainController::display
