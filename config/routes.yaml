@@ -21,3 +21,19 @@ user:
     path: /user/{name?}
     # the controller value has the format 'controller_class::method_name'
     controller: App\Controller\MainController::display
+
+post:
+    path: /post
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\PostController::index
+
+create:
+    path: /create
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\PostController::create
+
+viewonepost:
+    path: /viewonepost/{id?}
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\PostController::viewOne
+
