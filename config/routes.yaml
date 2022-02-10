@@ -37,3 +37,7 @@ viewonepost:
     # the controller value has the format 'controller_class::method_name'
     controller: App\Controller\PostController::viewOne
 
+deletePost:
+    path: /deletePost/{id?}
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\PostController::deletePost
