@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Posts LIST</h1>
+   <table class="table table-hover">
+       <thead>
+           <tr>
+               <th>ID</th>
+               <th>TITLE</th>
+               <th>
+                 Action
+               </th>
+               <th>
+                   Action
+               </th>
+           </tr>
+       </thead>
+       <tbody>
+            {% for post in posts %}
+                <tr>
+                    <td>{{ post.id }}</td>
+                    <td>{{ post.title }}</td>
+                   <td>
+{#                       <a href="{{ path('viewonepost',{id:post.id}) }}" class="btn--view btn btn-success" >View</a>#}
+                       <a href="{{ path('viewonepost',{id:post.id}) }}" class="btn--view btn btn-success" >View</a>
+                   </td>
+                    <td><a href="{{ path('deletePost',{id:post.id})}}" class="btn--view btn btn-danger" >Delete</a></td>
+                </tr>
+            {% endfor %}
+       </tbody>
+   </table>
+    {% block javascripts %}
+        <script>
+
+
+        </script>
+    {% endblock %}
+</div>
+{% endblock %}
