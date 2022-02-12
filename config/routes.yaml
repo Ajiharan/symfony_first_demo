@@ -41,3 +41,8 @@ deletePost:
     path: /deletePost/{id?}
     # the controller value has the format 'controller_class::method_name'
     controller: App\Controller\PostController::deletePost
+
+employee:
+    path: /employee/add
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\UserController::createUser

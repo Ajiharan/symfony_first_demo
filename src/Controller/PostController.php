@@ -25,12 +25,12 @@ class PostController extends AbstractController
 
     public function create(ManagerRegistry $doctrine,Request $request):Response{
 
-        $entityManager=$doctrine->getManager();
-        $post=new Post();
-        $post->setTitle('Hi welcome to ORM ENTITY mapping');
-
-        $entityManager->persist($post);
-        $entityManager->flush();
+//        $entityManager=$doctrine->getManager();
+//        $post=new Post();
+//        $post->setTitle('Hi welcome to ORM ENTITY mapping');
+//
+//        $entityManager->persist($post);
+//        $entityManager->flush();
 
         //entity manager
 
